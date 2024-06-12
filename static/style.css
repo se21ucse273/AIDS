@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.custom-file-input {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.custom-file-input input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-file-input label {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.custom-file-input input[type="file"]:hover + label {
+    background-color: #0056b3;
+}
+
+input[type="text"],
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+}
+
+.final {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.final:hover {
+    background-color: #218838;
+}
