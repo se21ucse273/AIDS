@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload PDF</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload PDF</h1>
+        <form action="{{ url_for('process_pdf') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="pdf_file" accept=".pdf" required>
+            <input type="text" name="txt_filename" placeholder="Enter output filename" required>
+            <button type="submit">Upload and Process</button>
+        </form>
+    </div>
+</body>
+</html>
